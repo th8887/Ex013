@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="5" />
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+
+        <Switch
+            android:id="@+id/on"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="10"
+            android:text="Switch"
+            android:onClick="change_color1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="60"
+            android:checkedButton="@id/ltblue">
+
+            <RadioButton
+                android:id="@+id/green"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="10"
+                android:text="Green"
+                android:onClick="change_green"/>
+
+            <RadioButton
+                android:id="@+id/gray"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="10"
+                android:text="Gray"
+                android:onClick="change_gray"/>
+
+            <RadioButton
+                android:id="@+id/purple"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="10"
+                android:text="Purple"
+                android:onClick="change_purple"/>
+
+            <RadioButton
+                android:id="@+id/ltblue"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="10"
+                android:text="Light Blue"
+                android:onClick="change_ltblue"/>
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="10"
+            android:onClick="change_color2"
+            android:text="Check" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="5" />
+</LinearLayout>
